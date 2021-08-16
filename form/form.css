@@ -1,0 +1,70 @@
+.container{
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgb(38, 47, 129);
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+    height: 100%;
+}
+.form{
+    position: absolute;
+    inset: 0;
+    width: 500px;
+    text-align: center;
+    height: 400px;
+    backdrop-filter: blur(7px);
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.116);
+    background-color: rgba(255, 255, 255, 0.178);
+}
+.title-div{
+    background-color: rgba(255, 255, 255, 0.164);
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    margin-top: 0;
+    box-shadow: 5px 0 9px 5px rgba(0, 0, 0, 0.048);
+}
+.title{
+    font-size: 28px;
+    user-select: none;
+    color: white;
+    margin: 0;
+}
+.form input{
+    width: 74%;
+    border: none;
+    color: white;
+    outline: none;
+    margin-top: 10px;
+    height: 40px;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.041);
+    font-size: 18px;
+    padding: 0.4em 0.7em;
+    background-color: rgba(255, 255, 255, 0.089);
+}
+.form input::placeholder{
+    color: rgb(175, 177, 196);
+}
+.form button[type="submit"]{
+    width: 74%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.089);
+    border: none;
+    outline: none;
+    box-shadow: 0 0 15px 9px rgba(0, 0, 0, 0.062);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+}
+.dummy-text{
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.dummy-text a{
+    color: rgb(0, 255, 0);
+}

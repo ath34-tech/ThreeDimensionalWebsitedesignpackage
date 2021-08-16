@@ -4,6 +4,7 @@
 :root{
   --navBackground:#e6e9ed;
   --navfont:#4b4e52;
+  --navPurple: #7329b8;
 }
 .navbar{
   display: inline-flex;
@@ -14,11 +15,12 @@
   height: 55px;
   align-items: center;
   justify-content: left;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--navBackground);
 }
 .logo{
-  color: white;
+  color: var(--navfont);
   margin-left: 15px;
+  font-weight: 700;
   user-select: none;
   font-size: 24px;
 }
@@ -37,7 +39,7 @@
   height: 35px;
 }
 .buttons div{
-  background-color: rgb(9, 9, 145);
+  background-color: var(--navPurple);
   font-size: 15px;
   color: white;
   height: 100%;
@@ -54,7 +56,7 @@
   border-radius: 5px;
   max-width: 300px;
   border: none;
-  color: white;
+  color: var(--navfont);
   outline: none;
   height: 30px;
   background: transparent;
@@ -62,10 +64,10 @@
   font-size: 16px;
   padding: 0 0.5em;
   transition: 0.2s;
-  width: 93%;
+  --padding: 1em;
 }
 .search:focus{
-  background: rgb(36, 36, 36);
+  background: rgba(0, 38, 255, 0.082);
 }
 
 .white-line::before, 
@@ -110,7 +112,7 @@
   .navbar.clicked .white-line:after, .navbar.clicked .white-line::before{
     transform: rotate(var(--x));
     top: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     bottom: 0;
   }
   .navbar.clicked .white-line{
@@ -123,7 +125,7 @@
     height: fit-content;
     margin-top: 30px;
     row-gap: 3px;
-    border-top: 1px gray solid;
+    border-top: 1px var(--navfont) solid;
     padding-top: 10px;
     left: 5px;
   }
@@ -131,7 +133,8 @@
     margin-top: 10px;
   }
   .search{
-    margin-top: 10px;
+    margin-top: 15px;
+    width: calc(100% - 22px - var(--padding));
     height: 40px;
   }
 }

@@ -1,5 +1,4 @@
-import '../CSS/animation.css'
-import '../CSS/navbar.css'
+import "./navbar.css"
 import React from 'react'
 import { useState } from 'react'
 
